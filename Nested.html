@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <script>
+        function giveMessage(message) {
+            let userMsg = message;
+
+            function toUser(userName) {
+                let name = userName;
+                let greet = userMsg + " " + name;
+                return greet;
+            }
+            userMsg = toUser("Bob");
+            return userMsg;
+        }
+        document.write(giveMessage("The world says hello dear: "));
+    </script>
+</body>
+
+</html>
